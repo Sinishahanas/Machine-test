@@ -6,11 +6,7 @@
 .text {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(17, 17, 114, 0.8),rgba(17, 17, 114, 0.8)),url(./image/background.jpg);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #fff;  
 }
 
 .sub-main {
@@ -19,16 +15,31 @@
   height: 100%;
 }
 
+
 .card {
+  margin-top: 40px !important;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  margin: auto;
+  height: 400px !important;
+  padding: 60px !important;
+  width: 40% !important;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 100, 0.8), rgba(0, 0, 100, 0.8)),url(./image/background.jpg);
+  background-image: linear-gradient(rgba(10, 10, 34, 0.8),rgba(8, 8, 31, 0.8)),url(./image/background.jpg);
   padding: 55px;
-  box-sizing: border-box;
-  backface-visibility: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+ .card{
+  width: 50% !important;
+  padding: 40px !important;
+  margin-top: 60px !important;
+ }
+}
+@media only screen and (max-width: 560px) {
+  .card{
+    width: 60% !important;
+  }
 }
 
 .card h2 {
@@ -37,9 +48,14 @@
   font-weight: normal;
   margin-bottom: 20px;
 }
+.label{
+  color: white !important;
+  display: block;
+}
 
 .input {
   width: 100%;
+
   background: transparent;
   border: 1px solid #fff;
   margin: 6px 0;
@@ -49,11 +65,11 @@
   box-sizing: border-box;
   outline: none;
   text-align: center;
-  color: #fff;
+  color: black;
 }
 
 ::placeholder {
-  color: white;
+  color: black;
   font-size: 14px;
 }
 
@@ -65,14 +81,15 @@
   height: 32px;
   font-size: 12px;
   border-radius: 20px;
-  padding: 0 10px;
+  padding-bottom: 20px !important; 
   box-sizing: border-box;
   outline: none;
   color: white;
   cursor: pointer;
 }
 
-/* .show{
-    display: flex;
-    justify-content: center;
-} */
+.show{
+    color:white;
+    background:linear-gradient(rgba(10, 10, 34, 0.8),rgba(48, 48, 92, 0.8));
+    width:20%;
+}

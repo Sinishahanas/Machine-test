@@ -19,13 +19,11 @@ function Input() {
     }
 
   return (
-    <div className="text">
-      <div className="main">
-        <div className="sub-main">
+        <div>
           <div className="card">
-            <Form>
+            <Form className="form">
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email</Form.Label>
+                <Form.Label className="label text-light">Email</Form.Label>
                 <Form.Control
                   className="input"
                   type="email"
@@ -36,7 +34,7 @@ function Input() {
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
+                <Form.Label className="label text-light">Password</Form.Label>
                 <Form.Control
                   className="input"
                   type="password"
@@ -45,19 +43,19 @@ function Input() {
                   onChange={handleChange}
                 />
               </Form.Group>
-
-              <Button className="button" variant="primary" type="submit" onClick={handleClick}>
+   
+              <Button className="button" variant="success" type="submit" onClick={handleClick}>
                 Submit
               </Button>
             </Form>
-          </div>
-        </div>
-      </div>
+            </div> 
       <br/>
+      <center>
       <div className="show">
         <p>{show.email}</p>
         <p>{show.password}</p>
       </div>
+      </center>
     </div>
   );
 }

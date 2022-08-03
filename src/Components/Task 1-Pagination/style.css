@@ -1,11 +1,11 @@
 .table{
     height: 100%;
     width: auto;
-    background-color: grey;
-    /* background-color: rgb(27, 4, 112); */
+    background-color: white;
+    margin: 5px;
     color: white;
     text-decoration: none;
 }
 .table:hover{
-    color: black;
+    color: grey;
 }

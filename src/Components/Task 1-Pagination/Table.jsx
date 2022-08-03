@@ -6,24 +6,24 @@ function TableData({user}) {
 
   return (
     <div>
-<Table bordered className="table">
+<Table bordered className="table" style={{borderColor:"black"}}>
         <thead>
           <tr>
             <th rowSpan={3}>Id</th>
             <th rowSpan={3}>Name</th>
             <th rowSpan={3}>Username</th>
             <th rowSpan={3}>Email</th>
-            <th colSpan={6}>Address</th>
+            <th colSpan={6} className="text-center">Address</th>
             <th rowSpan={3}>Phone</th>
             <th rowSpan={3}>Website</th>
-            <th colSpan={3}>Company</th>
+            <th colSpan={3} className="text-center">Company</th>
           </tr>
           <tr>
             <th rowSpan={2}>Street</th>
             <th rowSpan={2}>Suite</th>
             <th rowSpan={2}>City</th>
             <th rowSpan={2}>Zipcode</th>
-            <th colSpan={2}>Geo</th>
+            <th colSpan={2} className="text-center">Geo</th>
             <th rowSpan={2}>Name</th>
             <th rowSpan={2}>CatchPhrase</th>
             <th rowSpan={2}>Bs</th>

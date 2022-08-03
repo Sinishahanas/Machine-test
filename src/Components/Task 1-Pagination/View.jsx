@@ -16,13 +16,10 @@ function View() {
       axios.get(`https://jsonplaceholder.typicode.com/users`).then((res) => {
         setUser(res.data)
         console.log(res.data);
-      });
-
-      
+      });  
  
   };
  
-  
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = user.slice(indexOfFirstPost, indexOfLastPost);
